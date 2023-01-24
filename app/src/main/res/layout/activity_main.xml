@@ -7,15 +7,30 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/qna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="QnA"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toStartOf="@+id/feed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:text="Feed"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintStart_toEndOf="@+id/qna"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -25,12 +40,36 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:text="Home"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/webView"
-        app:layout_constraintEnd_toStartOf="@+id/feed"
+        app:layout_constraintEnd_toStartOf="@+id/qna"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+   <!-- <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/nts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:nts_active_color="#000"
+        app:nts_animation_duration="300"
+        app:nts_color="#000"
+        app:nts_corners_radius="1.5dp"
+        app:nts_factor="2.5"
+        app:nts_gravity="top"
+        app:nts_inactive_color="#c4c4c4"
+        app:nts_size="15sp"
+        app:nts_titles="@array/titles"
+        app:nts_type="point"
+        app:nts_typeface="fonts/typeface.otf"
+        app:nts_weight="3dp" /> -->
 
     <WebView
         android:id="@+id/webView"
@@ -39,6 +78,7 @@
         android:layout_marginTop="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
