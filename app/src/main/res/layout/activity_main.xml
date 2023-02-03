@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <!-- <Button
         android:id="@+id/qna"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,9 +46,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" /> -->
 
-   <!-- <com.gigamole.navigationtabstrip.NavigationTabStrip
+    <!-- <com.gigamole.navigationtabstrip.NavigationTabStrip
         android:id="@+id/nts"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -71,17 +71,64 @@
         app:nts_typeface="fonts/typeface.otf"
         app:nts_weight="3dp" /> -->
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabMode="fixed">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/homet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:icon="@drawable/ic_home"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/qnat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:icon="@drawable/ic_qna"
+            android:text="QnA" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/feedt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:icon="@drawable/ic_feed"
+            android:text="Feed" />
+
+    </com.google.android.material.tabs.TabLayout>
+
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="52dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tabMode">
 
     </WebView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabMode"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
