@@ -3,6 +3,8 @@
     package="com.example.opengenus">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permisstion.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".help"
+            android:exported="true"/>
         <activity
             android:name=".splash"
             android:exported="true">
