@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Usage Instructions"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="1. Use Search Bar in the Feed Tab to find the exact topic you want"
-        android:textColor="#673AB7"
+        android:textColor="@color/teal_200"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -53,7 +55,7 @@
         android:textSize="15sp"
         android:padding="10dp"
         android:text="2. Explore resources in Home tab which include pages to track your progress in learning a topic."
-        android:textColor="#673AB7"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +71,7 @@
         android:text="3. If confused, browse through topics in Feed and QnA tab."
         android:textSize="15sp"
         android:textStyle="bold"
-        android:textColor="#673AB7"
+        android:textColor="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/okay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
