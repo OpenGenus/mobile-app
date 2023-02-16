@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private AlertDialog dialog;
     private Button okay;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
